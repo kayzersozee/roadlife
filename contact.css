@@ -1,0 +1,198 @@
+body {
+    background-color: rgb(247, 240, 240);
+}
+
+body, ul, h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.top {
+    position: sticky;
+    top: 0;
+    background-color: inherit;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    max-width: 100%;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;   
+}
+
+.header h1 span {
+    color: #48cae4;
+}
+
+.mainNav{
+    display:flex;
+    list-style-type: none;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    transition: all ease-in-out 0.2s;
+    
+}
+
+a:visited{
+    color:inherit;
+}
+
+a:hover{
+    color: #000000;
+    background-color: #48cae4;
+    
+}
+
+
+
+/* Container  */
+form{
+    max-width: 35%;
+    height: 100%;
+    margin: 80px auto;
+}
+
+form ul {
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+    max-width: 100%;
+}
+form li{
+    padding:12px; 
+    height: 100%;
+}
+
+form h2 {
+    text-align: left;
+    font-size: small;
+    text-transform: uppercase;
+    
+}
+.required_notification {
+    color:rgb(90, 86, 86); 
+    margin: 3px auto; 
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+form label {
+    flex-basis: 10px;
+    max-width:150px;
+    margin-top: 3px;
+    padding:3px;
+}
+form input {
+    flex-basis: 10px;
+    text-rendering: none;
+    height:15px; 
+    max-width:220px; 
+    padding:5px 8px;
+    
+}
+
+form textarea {
+    padding:8px; 
+    width:200px;
+    
+}
+
+form button {
+    margin: auto;
+}
+
+input, .contact_form textarea { 
+    align-self: center;
+    transition: padding .5s;
+    padding-right:30px;
+}
+
+
+form input:focus, form textarea:focus {
+    background: #fff; 
+    border: 2;
+    padding-right:40px;
+}
+
+form input:focus:invalid, form textarea:focus:invalid {
+    border-color: #c02a2ac9;
+}
+
+form input:required:valid, form textarea:required:valid {
+    border-color: #144814;
+}
+
+button.submit {
+    background-color: #ffc8dd;
+    border: 1px solid #ffc8dd;
+    border-radius: 3px;
+    color: black;
+    font-weight: lighter;
+    padding: 6px 20px;
+    align-self: center;
+}
+button.submit:hover {
+    opacity:.8;
+    cursor: pointer; 
+}
+
+.end_page{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 150px;
+    padding: 5px;
+    width: 100%;
+    color: black;
+    text-align: left;
+    background-color: #48cae4;
+}
+
+
+@media (max-width: 600px){
+    .header h1 {
+  font-size: 13px;
+}
+
+.header h1 span {
+    font-size: 13px;
+}
+
+
+a {
+   font-size: 12px;
+}
+
+}
+
+@media (max-width: 350px){
+        .header h1 {
+  font-size: 11px;
+}
+
+.header h1 span {
+    font-size: 11px;
+}
+
+
+a {
+   font-size: 11px;
+}
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,200&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <section class="top">
+        <header class="header">
+            <h1><span>R</span>oad <span>L</span>ife</h1>
+        </header>
+        <nav>
+            <ul class="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <article class="formContainer">
+
+        <form method="post" name="contact_form" onsubmit="return validateForm()">
+            <h2>Contact Us</h2>
+            <span class="required_notification">* Required Field</span>
+            <ul>
+                <li>
+                    <label for="name">Name *</label><br>
+                    <input id="name" type="text" name="name">
+                </li>
+                <li>
+                    <label for="email">Email *</label><br>
+                    <input id="email" type="email" name="email">
+
+                </li>
+                <li>
+                    <input id="male" type="radio" name="gender" value=male>
+                    <label for="male"> Male</label><br>
+                    <input id="female" type="radio" name="gender" value=female>
+                    <label for="female"> Female</label><br>
+                    <input id="other" type="radio" name="gender" value=other>
+                    <label for="other"> Other</label><br>
+                </li>
+                <li>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" cols="40" rows="6"></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">Submit Form</button>
+                </li>
+            </ul>
+        </form>
+    </article>
+
+    <footer class="end_page">&copy; Copyright 2020 Road Life Inc
+        <p></p>
+    </footer>
+
+    <script src="about.js"></script>
+</body>
+
+</html>
